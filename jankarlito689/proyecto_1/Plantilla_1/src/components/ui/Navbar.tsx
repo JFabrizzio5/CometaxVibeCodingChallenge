@@ -1,42 +1,75 @@
 export default function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark glass sticky-top">
-            <div className="container">
-                <a className="navbar-brand fw-bold" href="/">
-                    SaaSify
-                </a>
-                <button
-                className="navbar-toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#menu"
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+        <header className="navbar-wrapper">
+            <nav className="navbar navbar-expand-lg premium-navbar">
+                <div className="container">
 
-                <div className="collapse navbar-collapse" id="menu">
-                    <ul className="navbar-nav ms-auto gap-3">
-                        <li className="nav-item">
-                            <a className="nav-link" href="/">Inicio</a>
-                        </li>
+                    {/* Logo */}
+                    <a className="navbar-brand brand-logo" href="/">
+                        <div className="logo-circle">
+                        S
+                        </div>
+                        <span>SaaSify</span>
+                    </a>
 
-                        <li className="nav-item">
-                            <a className="nav-link" href="/dashboard">Dashboard</a>
-                        </li>
+                    {/* Mobile button */}
+                    <button
+                        className="navbar-toggler custom-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menu"
+                    >
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
 
-                        <li className="nav-item">
-                            <a className="nav-link" href="/formulario">Formulario</a>
-                        </li>
+                    {/* Menu */}
+                    <div className="collapse navbar-collapse" id="menu">
+                        <ul className="navbar-nav mx-auto gap-lg-4">
+                            <li className="nav-item">
+                                <a className="nav-link custom-link active-link" href="/">
+                                    Inicio
+                                </a>
+                            </li>
 
-                        <li className="nav-item">
-                            <a className="nav-link" href="/login">Login</a>
-                        </li>
+                            <li className="nav-item">
+                                <a className="nav-link custom-link" href="/dashboard">
+                                    Dashboard
+                                </a>
+                            </li>
 
-                        <li className="nav-item">
-                            <a className="nav-link" href="/perfil">Perfil</a>
-                        </li>
-                    </ul>
+                            <li className="nav-item">
+                                <a className="nav-link custom-link" href="/formulario">
+                                    Formulario
+                                </a>
+                            </li>
+
+                            <li className="nav-item">
+                                <a className="nav-link custom-link" href="/login">
+                                    Login
+                                </a>
+                            </li>
+
+                            <li className="nav-item">
+                                <a className="nav-link custom-link" href="/perfil">
+                                    Perfil
+                                </a>
+                            </li>
+                        </ul>
+
+                        {/* Right buttons */}
+                        <div className="d-flex align-items-center gap-3 mt-4 mt-lg-0">
+
+                            <button className="btn btn-login">
+                                Sign in
+                            </button>
+                            <button className="btn btn-gradient">
+                                Get Started
+                            </button>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
     );
 }
