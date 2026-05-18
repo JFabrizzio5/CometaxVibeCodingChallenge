@@ -5,13 +5,15 @@ import {
   ChevronRight,
   Search
 } from 'lucide-react';
-import { Sidebar } from './components/Sidebar';
-import { LandingPage } from './layouts/Landingpage';
-import { DashboardView } from './layouts/DashboardView';
-import { CustomersView } from './layouts/CustomersView';
-import { LoginPage } from './layouts/LoginPage';
-import { SettingsView } from './layouts/SettingsView';
-import { AnalyticsView } from './layouts/AnalyticsView';
+import { 
+  AnalyticsView, 
+  CustomersView, 
+  DashboardView, 
+  LandingPage, 
+  LoginPage, 
+  SettingsView 
+} from './layouts';
+import { Sidebar } from './components';
 
 export default function App() {
   const [currentView, setView] = useState('landing');

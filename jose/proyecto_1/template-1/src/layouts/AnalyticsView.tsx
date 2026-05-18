@@ -1,6 +1,4 @@
-import { Button } from "../components/Button";
-import { Card } from "../components/Card";
-
+import { Card, Button } from '../components';
 import {
     Download,
     TrendingUp,
@@ -8,7 +6,6 @@ import {
     DollarSign,
     Activity
 } from 'lucide-react';
-
 import {
     Cell,
     XAxis,
@@ -21,7 +18,6 @@ import {
     AreaChart,
     Area
 } from 'recharts';
-
 import {
     DEVICE_DATA,
     MOCK_ANALYTICS,

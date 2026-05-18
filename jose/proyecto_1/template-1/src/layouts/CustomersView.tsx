@@ -1,7 +1,5 @@
-import { Button } from "../components/Button";
-import { Card } from "../components/Card";
+import { Badge, Button, Card } from "../components";
 import { MOCK_CUSTOMERS } from "../mock/mock";
-import { Badge } from "../components/Badge";
 import {
   Search,
   Filter,

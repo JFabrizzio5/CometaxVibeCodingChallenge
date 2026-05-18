@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Card } from "../components/Card";
-import { Button } from "../components/Button";
-import { LoginBackground } from "../components/LoginBackground";
+import { Card, Button, LoginBackground } from "../components";
 import {
     Zap,
     Mail,

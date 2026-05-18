@@ -1,5 +1,4 @@
-import { Card } from "../components/Card";
-import { Button } from "../components/Button";
+import { Card, Button } from "../components";
 
 export const SettingsView = () => (
   <div className="max-w-3xl space-y-8 animate-in fade-in duration-500">
