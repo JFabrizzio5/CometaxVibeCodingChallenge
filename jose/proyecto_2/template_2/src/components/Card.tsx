@@ -11,8 +11,8 @@ export const Card = ({ children, title, subtitle, footer, className = "" }: any)
   <div className={`${COLORS.surface} border ${COLORS.border} rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 ${className}`}>
     {(title || subtitle) && (
       <div className="p-6 border-b border-slate-100 dark:border-slate-800">
-        {title && <h3 className="text-lg font-black text-slate-800 dark:text-white tracking-tight">{title}</h3>}
-        {subtitle && <p className="text-sm text-slate-400 dark:text-slate-500 font-medium">{subtitle}</p>}
+        {title && <h3 className="text-lg font-black text-slate-800 tracking-tight">{title}</h3>}
+        {subtitle && <p className="text-sm text-slate-400 font-medium">{subtitle}</p>}
       </div>
     )}
     <div className="p-6">{children}</div>
