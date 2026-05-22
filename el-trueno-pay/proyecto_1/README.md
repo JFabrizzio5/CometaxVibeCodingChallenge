@@ -87,7 +87,8 @@ Abre http://localhost:8080 en tu navegador.
 
 ## 📁 Estructura del proyecto
 
-proyecto_1/
+```bash
+fintech-dashboard/
 ├── src/
 │   ├── views/
 │   │   ├── LandingView.vue
@@ -106,9 +107,7 @@ proyecto_1/
 ├── nginx.conf
 ├── vite.config.js
 └── README.md
-
-
----
+```
 
 ## 📱 Responsive
 
