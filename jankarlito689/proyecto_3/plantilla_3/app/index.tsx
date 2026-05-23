@@ -72,6 +72,13 @@ export default function LoginScreen() {
           ¿Olvidaste tu contraseña?
         </Text>
 
+        <TouchableOpacity
+          onPress={() => router.push('/register')}
+        >
+          <Text style={styles.registerLink}>
+            ¿No tienes cuenta? Regístrate
+          </Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -121,5 +128,11 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 18,
     color: '#60A5FA',
+  },
+  registerLink: {
+    textAlign: 'center',
+    marginTop: 12,
+    color: '#3B82F6',
+    fontWeight: '600',
   },
 });
