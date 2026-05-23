@@ -1,7 +1,10 @@
 import { Text, View } from '@/components/Themed';
+import { useRouter } from 'expo-router';
 import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function ProfileScreen() {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
       <View style={styles.card}>
@@ -20,7 +23,7 @@ export default function ProfileScreen() {
           jankarlo@email.com
         </Text>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push('/')}>
           <Text style={styles.buttonText}>
             Cerrar sesión
           </Text>
