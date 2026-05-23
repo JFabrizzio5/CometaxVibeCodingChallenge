@@ -25,15 +25,22 @@
 
 ### Pasos
 
+1. Clonar el repositorio
+
 ```bash
-# 1. Clonar el repositorio
-git clone https://github.com/JFabrizzio5/CometaxVibeCodingChallenge.git
-cd CometaxVibeCodingChallenge/el-trueno-pay/proyecto_1
+git clone https://github.com/Truenopay123/fintech-dashboard.git
+cd fintech-dashboard
+```
 
-# 2. Instalar dependencias
+2. Instalar dependencias
+
+```bash
 npm install
+```
 
-# 3. Arrancar servidor de desarrollo
+3. Arrancar servidor de desarrollo
+
+```bash
 npm run dev
 ```
 
@@ -58,11 +65,15 @@ Los archivos compilados quedan en `/dist`.
 
 ### Pasos
 
-```bash
-# 1. Construir la imagen
-docker build -t novapay-dashboard .
+1. Construir la imagen
 
-# 2. Correr el contenedor
+```bash
+docker build -t novapay-dashboard .
+```
+
+2. Correr el contenedor
+
+```bash
 docker run -p 8080:80 novapay-dashboard
 ```
 
@@ -111,7 +122,6 @@ fintech-dashboard/
 
 ## 📱 Responsive
 
-La plantilla es completamente responsive:
 - ✅ Mobile (320px+) — menú hamburguesa
 - ✅ Tablet (768px+)
 - ✅ Desktop (1024px+)
