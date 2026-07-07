@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Navbar from "../components/ui/Navbar";
+import UserProfile from "../components/user/UserProfile";
+---
+
+<Layout>
+    <Navbar client:load />
+    <section class="container py-5">
+        <UserProfile client:load />
+    </section>
+</Layout>

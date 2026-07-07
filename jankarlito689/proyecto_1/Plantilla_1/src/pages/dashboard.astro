@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Navbar from "../components/ui/Navbar";
+import DashboardStats from "../components/dashboard/DashboardStats";
+import DashboardTable from "../components/dashboard/DashboardTable";
+---
+
+<Layout>
+
+    <Navbar />
+
+    <section class="container py-5">
+        <div class="d-flex justify-content-between mb-5">
+            <div>
+                <h1 class="fw-bold">
+                    Dashboard
+                </h1>
+
+                <p class="text-secondary">
+                    Bienvenido nuevamente
+                </p>
+            </div>
+
+            <button class="btn-primary-custom">
+                Exportar
+            </button>
+        </div>
+
+        <DashboardStats/>
+
+        <DashboardTable />
+
+    </section>
+</Layout>

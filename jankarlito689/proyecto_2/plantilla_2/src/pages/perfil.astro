@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavBar from "../components/ui/NavBar";
+import UserProfile from "../components/user/UserProfile";
+---
+
+<Layout title="Perfil">
+	<NavBar client:load />
+
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<UserProfile client:load />
+			</div>
+		</div>
+	</section>
+</Layout>
