@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavBar from "../components/ui/NavBar";
+import Form from "../components/ui/Form";
+---
+
+<Layout title="Formulario">
+	<NavBar client:load />
+	<section class="container py-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-9">
+				<Form client:load />
+			</div>
+		</div>
+	</section>
+</Layout>

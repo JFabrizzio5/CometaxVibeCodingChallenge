@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import LoginCard from "../components/auth/LoginCard";
+---
+
+<Layout>
+    <section class="container d-flex justify-content-center align-items-center"
+        style="min-height: 100vh;"
+    >
+
+        <div style="max-width: 450px; width:100%;">
+            <LoginCard client:load />
+        </div>
+
+    </section>
+</Layout>

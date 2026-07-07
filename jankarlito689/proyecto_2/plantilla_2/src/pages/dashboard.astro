@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DashboardStats from "../components/dashboard/DashboardStats";
+import DashboardHeader from "../components/dashboard/Dashboardheader";
+import DashboardSidebar from "../components/dashboard/Dashboardsidebar";
+import MonthlyPerformance from "../components/dashboard/Monthlyperformance";
+import RecentActivity from "../components/dashboard/Recentactivity";
+import StudentsTable from "../components/dashboard/Studentstable";
+---
+
+<Layout title="Dashboard">
+    <div class="container-fluid">
+        <div class="row">
+            <DashboardSidebar client:load />
+            <div class="col-lg-10 p-4">
+                <DashboardHeader client:load />
+                <DashboardStats client:load />
+                <div class="row g-4 mt-2">
+                    <MonthlyPerformance client:load />
+                    <RecentActivity client:load />
+                </div>
+                <StudentsTable client:load />
+            </div>
+        </div>
+    </div>
+</Layout>
